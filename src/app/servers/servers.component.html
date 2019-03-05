@@ -1,3 +1,50 @@
-<p>
-  servers works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <p>Servers works!</p>
+
+      <!--<input 
+        type="text"
+        class="form-control"
+        [(ngModel)]="username">
+        <p>{{ username }}</p>
+
+        <button 
+        class="btn btn-primary" 
+        [disabled]="username === ''"
+        (click)="username = ''">Reset User</button>
+
+      <label>Server Name</label>
+      <input 
+        type="text"
+        class="form-control"
+        (input)="onUpdateServerName($event)">
+
+        two way databinding - formModule-->
+      <input 
+        type="text"
+        class="form-control"
+        [(ngModel)]="serverName">
+
+      <!--<p>{{ serverName }}</p>-->
+
+      <button 
+        class="btn btn-primary" 
+        [disabled]="!allowNewServer"
+        (click)="onCreateServer()">Add Server</button>
+
+
+      <!--<p>{{ serverCreationStatus }}</p>-->
+
+      <!-- string interpolation - print text 
+      <p>{{ allowNewServer }}</p>-->
+
+      <!-- property binding - change a component
+      <p [innerText]="allowNewServer"></p>-->
+
+      <app-server></app-server>
+      <app-server></app-server>
+
+    </div>
+  </div>
+</div>
